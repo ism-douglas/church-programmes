@@ -46,11 +46,10 @@ if ($text == "") {
         } else {
             $response = "END Invalid selection.";
         }
-
         // Determines which service the user selected based on the first element of the array.
 
         if (isset($service)) {
-            $response = "END Thank you $name, you have selected $service.";
+            $response = "END Thank you $name, you have registered for $service.";
         // Constructs the final response, thanking the user and confirming their selection.
         // If the service selection is invalid, it ends the session with an "Invalid selection" message.
         }
