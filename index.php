@@ -16,7 +16,7 @@ if ($text == "") {
     $response .= "2. Counselling\n";
     $response .= "3. Youth Sessions\n";
     $response .= "4. Marriage Sessions\n";
-    $response .= "5. Evangelism\n";
+    $response .= "5. Career Coaching \n";
 
 } else {
     // Splits the text input based on the * character, creating an array ($explodedText).
@@ -40,7 +40,7 @@ if ($text == "") {
         } else if ($selectedOption == "4") {
             $service = "Marriage Sessions";
         } else if ($selectedOption == "5") {
-            $service = "Evangelism";
+            $service = "Career Coaching";
         } else {
             // If the service selection is invalid, it ends the session with an "Invalid selection" message.
             $response = "END Invalid selection.";
@@ -49,7 +49,7 @@ if ($text == "") {
         //If name and service are set
         if (isset($name,$service)) {
             // Constructs the final response, thanking the user and confirming their selection.
-            $response = "END Thank you $name, you have registered for $service.";       
+            $response = "END Dear $name, you have registered for $service.";       
         
         }
     }
